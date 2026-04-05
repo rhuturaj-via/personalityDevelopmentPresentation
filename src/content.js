@@ -1,5 +1,6 @@
 import {
   Brain,
+  Camera,
   HeartHandshake,
   MessageSquareText,
   ShieldCheck,
@@ -14,6 +15,7 @@ export const slides = [
   { id: 'meaning', label: 'Meaning' },
   { id: 'pillars', label: 'Pillars' },
   { id: 'habits', label: 'Habits' },
+  { id: 'videos', label: 'Videos' },
   { id: 'challenge', label: 'Challenge' },
 ];
 
@@ -119,5 +121,62 @@ export const challengeSteps = [
     title: 'Week 4: Repeat and reflect',
     text: 'Track what worked, what failed, and what you will keep doing after 30 days.',
     icon: Target,
+  },
+];
+
+export const videos = [
+  {
+    title: 'How to Get Better at the Things You Care About',
+    speaker: 'Eduardo Briceño',
+    channel: 'TED',
+    duration: 'About 10 minutes',
+    focus: 'growth mindset and steady self-improvement',
+    icon: Sparkles,
+    searchQuery: 'Eduardo Briceno How to Get Better at the Things You Care About TED YouTube',
+  },
+  {
+    title: 'How to Speak So That People Want to Listen',
+    speaker: 'Julian Treasure',
+    channel: 'TED',
+    duration: 'About 10 minutes',
+    focus: 'voice, speaking confidence, and communication',
+    icon: MessageSquareText,
+    searchQuery: 'Julian Treasure How to Speak So That People Want to Listen TED YouTube',
+  },
+  {
+    title: '10 Ways to Have a Better Conversation',
+    speaker: 'Celeste Headlee',
+    channel: 'TED',
+    duration: 'About 12 minutes',
+    focus: 'listening, empathy, and respectful conversation',
+    icon: HeartHandshake,
+    searchQuery: 'Celeste Headlee 10 Ways to Have a Better Conversation TED YouTube',
+  },
+  {
+    title: 'Your Body Language May Shape Who You Are',
+    speaker: 'Amy Cuddy',
+    channel: 'TED',
+    duration: 'About 21 minutes',
+    focus: 'body language, confidence, and presence',
+    icon: Camera,
+    searchQuery: 'Amy Cuddy Your Body Language May Shape Who You Are TED YouTube',
+  },
+  {
+    title: 'How I Beat Stage Fright',
+    speaker: 'Joe Kowan',
+    channel: 'TED',
+    duration: 'About 8 minutes',
+    focus: 'overcoming fear while speaking in front of others',
+    icon: ShieldCheck,
+    searchQuery: 'Joe Kowan How I Beat Stage Fright TED YouTube',
+  },
+  {
+    title: 'How to Speak Up for Yourself',
+    speaker: 'Adam Galinsky',
+    channel: 'TED',
+    duration: 'About 16 minutes',
+    focus: 'assertiveness without aggression',
+    icon: Target,
+    searchQuery: 'Adam Galinsky How to Speak Up for Yourself TED YouTube',
   },
 ];

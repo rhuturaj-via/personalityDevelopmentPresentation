@@ -14,6 +14,7 @@ import SectionCard from './components/SectionCard';
 import PillarGrid from './components/PillarGrid';
 import ChecklistPanel from './components/ChecklistPanel';
 import ChallengeTimeline from './components/ChallengeTimeline';
+import VideoRecommendations from './components/VideoRecommendations';
 import {
   challengeSteps,
   dos,
@@ -22,6 +23,7 @@ import {
   highlights,
   pillars,
   slides,
+  videos,
 } from './content';
 
 const sectionIds = slides.map((slide) => slide.id);
@@ -233,8 +235,18 @@ export default function App() {
           </SectionCard>
 
           <SectionCard
-            id="challenge"
+            id="videos"
             eyebrow="Slide 5"
+            title="Recommended YouTube videos for class or homework"
+            description="These short talks match grade 10 student level well. They focus on confidence, communication, body language, and self-improvement, and each card opens a YouTube search for the exact talk title."
+            accent="accent"
+          >
+            <VideoRecommendations items={videos} />
+          </SectionCard>
+
+          <SectionCard
+            id="challenge"
+            eyebrow="Slide 6"
             title="30-day personality growth challenge"
             description="Growth becomes real when students take action. This four-week challenge makes the presentation practical, personal, and easy to remember."
             accent="brand"
